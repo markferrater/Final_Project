@@ -25,182 +25,142 @@ Partial Class addBook
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
+        txtbID = New TextBox()
+        txtISBN = New TextBox()
         Label4 = New Label()
         Label5 = New Label()
+        txtAuthor = New TextBox()
         Label6 = New Label()
-        Label7 = New Label()
-        Label11 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox4 = New TextBox()
-        TextBox5 = New TextBox()
-        TextBox6 = New TextBox()
-        TextBox7 = New TextBox()
         Button1 = New Button()
         Button2 = New Button()
+        txtbCategory = New ComboBox()
+        txtbTitle = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(29, 73)
+        Label1.Font = New Font("Myanmar Text", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(22, 19)
         Label1.Name = "Label1"
-        Label1.Size = New Size(51, 15)
-        Label1.TabIndex = 0
-        Label1.Text = "Book ID:"
+        Label1.Size = New Size(96, 29)
+        Label1.TabIndex = 1
+        Label1.Text = "ADD BOOK"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(29, 112)
+        Label2.Location = New Point(22, 60)
         Label2.Name = "Label2"
-        Label2.Size = New Size(35, 15)
-        Label2.TabIndex = 1
-        Label2.Text = "ISBN:"
+        Label2.Size = New Size(48, 15)
+        Label2.TabIndex = 2
+        Label2.Text = "Book ID"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(29, 154)
+        Label3.Location = New Point(22, 117)
         Label3.Name = "Label3"
-        Label3.Size = New Size(72, 15)
-        Label3.TabIndex = 2
-        Label3.Text = "Book Name:"
+        Label3.Size = New Size(62, 15)
+        Label3.TabIndex = 3
+        Label3.Text = "Book ISBN"
+        ' 
+        ' txtbID
+        ' 
+        txtbID.Location = New Point(22, 78)
+        txtbID.Name = "txtbID"
+        txtbID.Size = New Size(201, 23)
+        txtbID.TabIndex = 0
+        ' 
+        ' txtISBN
+        ' 
+        txtISBN.Location = New Point(22, 135)
+        txtISBN.Name = "txtISBN"
+        txtISBN.Size = New Size(201, 23)
+        txtISBN.TabIndex = 1
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(29, 197)
+        Label4.Location = New Point(22, 233)
         Label4.Name = "Label4"
-        Label4.Size = New Size(82, 15)
-        Label4.TabIndex = 3
-        Label4.Text = "Author Name:"
+        Label4.Size = New Size(85, 15)
+        Label4.TabIndex = 7
+        Label4.Text = "Book Category"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(29, 243)
+        Label5.Location = New Point(22, 176)
         Label5.Name = "Label5"
-        Label5.Size = New Size(94, 15)
-        Label5.TabIndex = 4
-        Label5.Text = "Publisher Name:"
+        Label5.Size = New Size(59, 15)
+        Label5.TabIndex = 6
+        Label5.Text = "Book Title"
+        ' 
+        ' txtAuthor
+        ' 
+        txtAuthor.Location = New Point(22, 313)
+        txtAuthor.Name = "txtAuthor"
+        txtAuthor.Size = New Size(201, 23)
+        txtAuthor.TabIndex = 4
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(370, 73)
+        Label6.Location = New Point(22, 295)
         Label6.Name = "Label6"
-        Label6.Size = New Size(88, 15)
-        Label6.TabIndex = 5
-        Label6.Text = "Book Category:"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(370, 117)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(79, 15)
-        Label7.TabIndex = 6
-        Label7.Text = "No of Copies:"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(29, 24)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(130, 21)
-        Label11.TabIndex = 10
-        Label11.Text = "Add New Books"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(133, 65)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(179, 23)
-        TextBox1.TabIndex = 11
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(133, 109)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(179, 23)
-        TextBox2.TabIndex = 12
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Location = New Point(133, 151)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(179, 23)
-        TextBox3.TabIndex = 13
-        ' 
-        ' TextBox4
-        ' 
-        TextBox4.AllowDrop = True
-        TextBox4.Location = New Point(464, 70)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(179, 23)
-        TextBox4.TabIndex = 16
-        ' 
-        ' TextBox5
-        ' 
-        TextBox5.Location = New Point(133, 238)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(179, 23)
-        TextBox5.TabIndex = 15
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Location = New Point(133, 194)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(179, 23)
-        TextBox6.TabIndex = 14
-        ' 
-        ' TextBox7
-        ' 
-        TextBox7.Location = New Point(464, 109)
-        TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(179, 23)
-        TextBox7.TabIndex = 17
+        Label6.Size = New Size(74, 15)
+        Label6.TabIndex = 10
+        Label6.Text = "Book Author"
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(370, 156)
+        Button1.Location = New Point(22, 365)
         Button1.Name = "Button1"
-        Button1.Size = New Size(273, 41)
-        Button1.TabIndex = 18
-        Button1.Text = "Add Book"
+        Button1.Size = New Size(201, 54)
+        Button1.TabIndex = 5
+        Button1.Text = "ADD"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(370, 217)
+        Button2.Location = New Point(22, 430)
         Button2.Name = "Button2"
-        Button2.Size = New Size(273, 41)
-        Button2.TabIndex = 19
-        Button2.Text = "Update Book"
+        Button2.Size = New Size(201, 54)
+        Button2.TabIndex = 13
+        Button2.Text = "Clear"
         Button2.UseVisualStyleBackColor = True
+        ' 
+        ' txtbCategory
+        ' 
+        txtbCategory.FormattingEnabled = True
+        txtbCategory.Location = New Point(22, 251)
+        txtbCategory.Name = "txtbCategory"
+        txtbCategory.Size = New Size(201, 23)
+        txtbCategory.TabIndex = 14
+        ' 
+        ' txtbTitle
+        ' 
+        txtbTitle.Location = New Point(22, 194)
+        txtbTitle.Name = "txtbTitle"
+        txtbTitle.Size = New Size(201, 23)
+        txtbTitle.TabIndex = 2
         ' 
         ' addBook
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(714, 291)
+        ClientSize = New Size(244, 496)
+        Controls.Add(txtbCategory)
         Controls.Add(Button2)
         Controls.Add(Button1)
-        Controls.Add(TextBox7)
-        Controls.Add(TextBox4)
-        Controls.Add(TextBox5)
-        Controls.Add(TextBox6)
-        Controls.Add(TextBox3)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
-        Controls.Add(Label11)
-        Controls.Add(Label7)
+        Controls.Add(txtAuthor)
         Controls.Add(Label6)
-        Controls.Add(Label5)
+        Controls.Add(txtbTitle)
         Controls.Add(Label4)
+        Controls.Add(Label5)
+        Controls.Add(txtISBN)
+        Controls.Add(txtbID)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -213,18 +173,14 @@ Partial Class addBook
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents txtbID As TextBox
+    Friend WithEvents txtISBN As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents txtAuthor As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents txtbCategory As ComboBox
+    Friend WithEvents txtbTitle As TextBox
 End Class

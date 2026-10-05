@@ -100,16 +100,19 @@ Partial Class Dashboard
         ' 
         Column1.HeaderText = "Transaction ID"
         Column1.Name = "Column1"
+        Column1.ReadOnly = True
         ' 
         ' Column2
         ' 
         Column2.HeaderText = "Patron LastName"
         Column2.Name = "Column2"
+        Column2.ReadOnly = True
         ' 
         ' Column3
         ' 
         Column3.HeaderText = "MemberID"
         Column3.Name = "Column3"
+        Column3.ReadOnly = True
         ' 
         ' Column4
         ' 

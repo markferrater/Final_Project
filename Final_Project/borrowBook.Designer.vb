@@ -38,7 +38,7 @@ Partial Class borrowBook
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(150, 57)
+        TextBox1.Location = New Point(30, 68)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 23)
         TextBox1.TabIndex = 12

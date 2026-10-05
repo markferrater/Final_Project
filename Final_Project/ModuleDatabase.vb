@@ -17,7 +17,9 @@ Module ModuleDatabase
         sqlcon.Close()
     End Sub
 
+    Public Sub viewData(dgv As DataGridView)
 
+    End Sub
 
 
 End Module

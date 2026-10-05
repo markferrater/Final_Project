@@ -23,43 +23,45 @@ Partial Class bookDashboard
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Label11 = New Label()
-        DataGridView1 = New DataGridView()
+        dgvBooks = New DataGridView()
         Column1 = New DataGridViewTextBoxColumn()
         Column2 = New DataGridViewTextBoxColumn()
         Column3 = New DataGridViewTextBoxColumn()
         Column4 = New DataGridViewTextBoxColumn()
         Column5 = New DataGridViewTextBoxColumn()
-        Column6 = New DataGridViewTextBoxColumn()
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
         TextBox1 = New TextBox()
         Label1 = New Label()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        Label2 = New Label()
+        lblSB = New Label()
+        ComboBox1 = New ComboBox()
+        CType(dgvBooks, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.Location = New Point(21, 17)
         Label11.Name = "Label11"
         Label11.Size = New Size(99, 21)
         Label11.TabIndex = 11
         Label11.Text = "Book Shelfs"
         ' 
-        ' DataGridView1
+        ' dgvBooks
         ' 
-        DataGridView1.AllowUserToAddRows = False
-        DataGridView1.AllowUserToDeleteRows = False
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5, Column6})
-        DataGridView1.Location = New Point(21, 73)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.ReadOnly = True
-        DataGridView1.Size = New Size(644, 183)
-        DataGridView1.TabIndex = 12
+        dgvBooks.AllowUserToAddRows = False
+        dgvBooks.AllowUserToDeleteRows = False
+        dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvBooks.Columns.AddRange(New DataGridViewColumn() {Column1, Column2, Column3, Column4, Column5})
+        dgvBooks.Location = New Point(21, 73)
+        dgvBooks.Name = "dgvBooks"
+        dgvBooks.ReadOnly = True
+        dgvBooks.Size = New Size(525, 183)
+        dgvBooks.TabIndex = 12
         ' 
         ' Column1
         ' 
@@ -87,15 +89,9 @@ Partial Class bookDashboard
         ' 
         ' Column5
         ' 
-        Column5.HeaderText = "No of copies"
+        Column5.HeaderText = "ISBN"
         Column5.Name = "Column5"
         Column5.ReadOnly = True
-        ' 
-        ' Column6
-        ' 
-        Column6.HeaderText = "book shelf No."
-        Column6.Name = "Column6"
-        Column6.ReadOnly = True
         ' 
         ' Button1
         ' 
@@ -135,7 +131,7 @@ Partial Class bookDashboard
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(113, 44)
+        TextBox1.Location = New Point(394, 44)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(152, 23)
         TextBox1.TabIndex = 17
@@ -143,44 +139,78 @@ Partial Class bookDashboard
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(21, 47)
+        Label1.Location = New Point(280, 47)
         Label1.Name = "Label1"
-        Label1.Size = New Size(86, 15)
+        Label1.Size = New Size(61, 15)
         Label1.TabIndex = 18
-        Label1.Text = "Search by Title:"
+        Label1.Text = "Search by:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(21, 47)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(52, 15)
+        Label2.TabIndex = 20
+        Label2.Text = "Filter By:"
+        ' 
+        ' lblSB
+        ' 
+        lblSB.AutoSize = True
+        lblSB.Location = New Point(338, 47)
+        lblSB.Name = "lblSB"
+        lblSB.Size = New Size(33, 15)
+        lblSB.TabIndex = 21
+        lblSB.Text = "Tittle"
+        ' 
+        ' ComboBox1
+        ' 
+        ComboBox1.AllowDrop = True
+        ComboBox1.FormattingEnabled = True
+        ComboBox1.Items.AddRange(New Object() {"ID", "Name", "Category"})
+        ComboBox1.Location = New Point(79, 44)
+        ComboBox1.Name = "ComboBox1"
+        ComboBox1.Size = New Size(121, 23)
+        ComboBox1.TabIndex = 22
         ' 
         ' bookDashboard
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(687, 317)
+        ClientSize = New Size(568, 317)
+        Controls.Add(ComboBox1)
+        Controls.Add(lblSB)
+        Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(TextBox1)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvBooks)
         Controls.Add(Label11)
         Name = "bookDashboard"
         Text = "bookDashboard"
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvBooks, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents Label11 As Label
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents dgvBooks As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents lblSB As Label
+    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
 End Class
